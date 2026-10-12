@@ -30,7 +30,7 @@ PhishPrint/
 ## Progress
 - [x] Day 0 — Project setup
 - [x] Day 1 — EDA
-- [ ] Day 2 — Preprocessing + Feature Engineering
+- [x] Day 2 — Preprocessing + Feature Engineering
 - [ ] Day 3 — Model Training
 - [ ] Day 4 — Evaluation + SHAP
 - [ ] Day 5 — Streamlit UI
