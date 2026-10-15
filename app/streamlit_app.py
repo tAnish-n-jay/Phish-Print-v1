@@ -128,7 +128,7 @@ def extract_features(url):
 
 st.title('PhishPrint')
 st.markdown('Digital Footprint Analysis of Malicious URLs')
-st.markdown('===')
+st.markdown('---')
 url_input = st.text_input(
     "Enter a URL to analyze:",
     placeholder="https://example.com"
@@ -152,7 +152,7 @@ if analyse_btn:
 
             prediction = model.predict(X_transformed)[0]
             confidence = model.predict_proba(X_transformed).max() * 100
-        st.markdown('===')
+        st.markdown('---')
 
         if prediction == 1:
             st.error(f"Phishing URL Detected!")
@@ -167,7 +167,7 @@ if analyse_btn:
             st.success('Legitimate URL')
             st.metric('Confidence', f'{confidence:.1f}%')
 
-        st.markdown('===')
+        st.markdown('---')
         st.subheader('URL Feature Breakdown')
 
         col1, col2, col3 = st.columns(3)
@@ -182,5 +182,5 @@ if analyse_btn:
             st.metric('HTTPS', 'Yes' if features['https_token'] else 'No')
             st.metric('Phish Hints', features['phish_hints'])
 
-st.markdown('===')
+st.markdown('---')
 st.caption('PhishPrint | Tanish N Jay')
