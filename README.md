@@ -1,4 +1,4 @@
-# PhishPrint 🔍
+# PhishPrint
 > Digital Footprint Analysis of Malicious URLs Using Feature-Engineered ML Pipelines
 
 ## About
